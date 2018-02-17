@@ -19,7 +19,7 @@ textInput(text, file, language = 'en', slow = False)
 ```
 
 ###### _Parameters:_
-* `file` - String - File to save the speech to.
+* `file` - String - File to load the speech from.
 ```
 playAudio(file)
 ```
