@@ -87,3 +87,21 @@ if text != exitCode:
 * 'uk' : 'Ukrainian'
 * 'vi' : 'Vietnamese'
 * 'cy' : 'Welsh'
+
+# Speech-to-Text
+A basic speech recognition program.
+
+## Requirements
+```
+pip install speechrecognition
+pip install pyaudio
+```
+
+## Example
+```
+r = sr.Recognizer()
+with sr.Microphone() as source:
+    r.adjust_for_ambient_noise(source)
+    audio = r.listen(source)
+    print(r.recognize_google(audio))
+```
